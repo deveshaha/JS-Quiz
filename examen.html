@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exmamen tipo test</title>
+    <link rel="stylesheet" type="text/css" href="examen.css">
+    <script src="examen.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Examen de Cultura General</h1>
+        <p>Vamos a poner a prueba tus conocimientos de cultura general</p>
+    </header>
+
+    <div class="registrar">
+            <h2>Introduce tu nombre:</h2>
+            <input type="text" id="usuario"/>
+    </div>
+
+    <div class="empezamos">
+        <h1>¡Empezamos!</h1>
+    </div>
+
+    <div class="container">
+        <section id="p1">
+            <h3>1. ¿Cuál es el río más largo del mundo?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="repsuesta(0, this)"> Manzanares</input>
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="repsuesta(0, this)"> Tamesis</input>
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="repsuesta(0, this)"> Amazonas</input>
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>2. ¿Cuál es el país con más habitantes del mundo?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="repsuesta(1, this)"> Indonesia</input>
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="repsuesta(1, this)"> China</input>
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="repsuesta(1, this)"> España</input>
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>3. ¿Cuál es el edificio más alto del mundo?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="repsuesta(2, this)"> Empire State (Nueva York)</input>
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="repsuesta(2, this)"> Burj Khalifa (Dubai)</input>
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="repsuesta(2, this)"> Shangai Tower (Shangai)</input>
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>4. ¿Dónde está Transilvania?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="repsuesta(3, this)"> Rumanía</input>
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="repsuesta(3, this)"> Estados Unidos </input>
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="repsuesta(3, this)"> República Checa </input>
+            </label>
+        </section>
+
+        <section id="p5">
+            <h3>5. ¿Cuál es el país con menos habitantes del mundo?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onclick="repsuesta(4, this)"> Portugal</input>
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" onclick="repsuesta(4, this)"> Islas Fiji </input>
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" onclick="repsuesta(4, this)"> El Vaticano</input>
+            </label>
+        </section>
+    </div>
+
+    <button onclick="checkRespuestas()">Finalizar test</button>
+    <h2><span id="respuestas"></span></h2>
+</body>
+</html>
